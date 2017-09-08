@@ -889,7 +889,7 @@ babel-preset-jest@^21.0.2:
   dependencies:
     babel-plugin-jest-hoist "^21.0.2"
 
-babel-preset-react-app@^3.0.2:
+babel-preset-react-app@3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/babel-preset-react-app/-/babel-preset-react-app-3.0.2.tgz#d062fca5dce68ed9c2615f2fecbc08861720f8e5"
   dependencies:
@@ -2113,7 +2113,7 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-react-app@^2.0.0:
+eslint-config-react-app@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-2.0.0.tgz#8a5fb357c028336578c37a4bd2fc72b1817717cf"
 
@@ -5048,7 +5048,7 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dev-utils@^4.0.1:
+react-dev-utils@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.0.1.tgz#106ae3d29f811c169d459bb9215a5933b7e11fb6"
   dependencies:
