@@ -1,3 +1,3 @@
-## sf-tunage
+## sf-venues
 
-unified event calendar for select venues in san francisco - pulls from songkick's api
+select venue event listings in san francisco (from songkick's api)
