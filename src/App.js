@@ -22,52 +22,62 @@ class App extends Component {
           <Venue
             venueName="Rickshaw Stop"
             venueID="14791-rickshaw-stop"
-            venueUrl="http://www.rickshawstop.com/"
+            venueUrl="//www.rickshawstop.com"
           />
           <Venue
             venueName="Bottom of the Hill"
             venueID="248-bottom-of-the-hill"
-            venueUrl="http://www.bottomofthehill.com/"
+            venueUrl="//www.bottomofthehill.com"
           />
           <Venue
             venueName="1015 Folsom"
             venueID="5670-1015-folsom"
-            venueUrl="http://www.1015.com"
+            venueUrl="//www.1015.com"
           />
           <Venue
             venueName="Audio"
             venueID="2393199-audio"
-            venueUrl="http://www.audiosf.com/"
+            venueUrl="//www.audiosf.com"
           />
           <Venue
             venueName="Fox Theater"
             venueID="953251-fox-theater"
-            venueUrl="http://www.thefoxoakland.com/"
+            venueUrl="//www.thefoxoakland.com"
           />
           <Venue
             venueName="The Independent"
             venueID="324-independent"
-            venueUrl="http://www.theindependentsf.com/"
+            venueUrl="//www.theindependentsf.com"
           />
           <Venue
             venueName="The Mezzanine"
             venueID="329-mezzanine"
-            venueUrl="http://www.mezzaninesf.com/"
+            venueUrl="//www.mezzaninesf.com"
           />
           <Venue
             venueName="Hotel Utah Saloon"
             venueID="328-hotel-utah-saloon"
-            venueUrl="http://www.hotelutah.com/"
+            venueUrl="//www.hotelutah.com"
           />
           <Venue
             venueName="The Chapel"
             venueID="2029634-chapel"
-            venueUrl="http://www.thechapelsf.com/"
+            venueUrl="//www.thechapelsf.com"
           />
           <Venue
             venueName="Slim's"
             venueID="1489-slims"
-            venueUrl="http://www.slims-sf.com/"
+            venueUrl="//www.slims-sf.com"
+          />
+          <Venue
+            venueName="Public Works"
+            venueID="1108926-public-works"
+            venueUrl="//publicsf.com"
+          />
+          <Venue
+            venueName="Halcyon"
+            venueID="3429914-halcyon"
+            venueUrl="//www.halcyon-sf.com"
           />
         </VenueContainer>
       </div>
