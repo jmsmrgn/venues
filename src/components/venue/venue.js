@@ -26,7 +26,7 @@ const Button = styled.div`
   width: 100%;
   padding: 20px;
   background: oldlace;
-  color: mediumaquamarine;
+  color: #29BEA5;
   text-decoration: none;
   :hover {
     cursor: pointer;
