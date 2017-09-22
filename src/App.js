@@ -79,6 +79,16 @@ class App extends Component {
             venueID="3429914-halcyon"
             venueUrl="//www.halcyon-sf.com"
           />
+          <Venue
+            venueName="Monarch"
+            venueID="1595753-monarch"
+            venueUrl="http://www.monarchsf.com/"
+          />
+          <Venue
+            venueName="Great American Music Hall"
+            venueID="1261-great-american-music-hall"
+            venueUrl="http://www.slimspresents.com/venue_detail/gamh/"
+          />
         </VenueContainer>
       </div>
     );
