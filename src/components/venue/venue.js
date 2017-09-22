@@ -77,8 +77,6 @@ const DayOfMonth = styled.span`
   font-size: 12px;
 `
 
-
-
 class Venue extends React.Component {
   constructor() {
     super()
