@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import axios from 'axios'
 import styled from 'styled-components'
 
@@ -77,7 +78,13 @@ const DayOfMonth = styled.span`
   font-size: 12px;
 `
 
-class Venue extends React.Component {
+class Venue extends Component {
+  static propTypes = {
+    venueName: PropTypes.string.isRequired,
+    venueID: PropTypes.string.isRequired,
+    venueUrl: PropTypes.string.isRequired
+  }
+
   constructor() {
     super()
     this.state = {
@@ -85,10 +92,9 @@ class Venue extends React.Component {
       fetched: false,
       showList: false
     }
-    this.fetchVenue = this.fetchVenue.bind(this)
   }
 
-  async fetchVenue() {
+  fetchVenue = async () => {
     if (this.state.fetched) {
       this.setState({ showList: !this.state.showList })
       return
