@@ -88,6 +88,61 @@ class App extends Component {
             venueID="1261-great-american-music-hall"
             venueUrl="http://www.slimspresents.com/venue_detail/gamh/"
           />
+          <Venue
+            venueName="The Warfield"
+            venueID="949-warfield"
+            venueUrl="http://thewarfieldtheatre.com/"
+          />
+          <Venue
+            venueName="The Midway"
+            venueID="3013529-midway"
+            venueUrl="http://www.themidwaysf.com/"
+          />
+          <Venue
+            venueName="The Great Northern"
+            venueID="3366109-great-northern-san-francisco"
+            venueUrl="http://www.thegreatnorthernsf.com/"
+          />
+          <Venue
+            venueName="Neck of the Woods"
+            venueID="2091824-neck-of-the-woods"
+            venueUrl="http://neckofthewoodssf.com/"
+          />
+          <Venue
+            venueName="Hemlock Tavern"
+            venueID="31153-hemlock-tavern"
+            venueUrl="http://www.hemlocktavern.com/"
+          />
+          <Venue
+            venueName="Temple"
+            venueID="32793-temple"
+            venueUrl="http://www.templesf.com/"
+          />
+          <Venue
+            venueName="Greek Theatre"
+            venueID="841-greek-theatre"
+            venueUrl="http://thegreekberkeley.com/"
+          />
+          <Venue
+            venueName="Bill Graham Civic Auditorium"
+            venueID="/65-bill-graham-civic-auditorium"
+            venueUrl="http://www.billgrahamcivicauditorium.com/"
+          />
+          <Venue
+            venueName="Brick & Mortar Music Hall"
+            venueID="1296241-brick-and-mortar-music-hall"
+            venueUrl="http://brickandmortarmusic.com/"
+          />
+          <Venue
+            venueName="Social Hall SF"
+            venueID="3068854-social-hall-sf"
+            venueUrl="http://www.socialhallsf.com/"
+          />
+          <Venue
+            venueName="The Regency Ballroom"
+            venueID="1418-regency-ballroom"
+            venueUrl="http://www.theregencyballroom.com/"
+          />
         </VenueContainer>
       </div>
     );
