@@ -8,7 +8,6 @@ import Venue from './components/venue/venue'
 const VenueContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto;
 `
