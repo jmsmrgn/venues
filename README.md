@@ -1,8 +1,8 @@
 ## sf-venues
 
-select venue event listings in san francisco (from songkick's api)
+Select venue event listings in San Francisco
 
 ```bash
-npm install
-npm start
+yarn
+yarn start
 ```
