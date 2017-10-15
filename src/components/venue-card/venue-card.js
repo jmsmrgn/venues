@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import axios from 'axios'
 import getDayOfWeek from '../../utils/get-day-of-week.js'
