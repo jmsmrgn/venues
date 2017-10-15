@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import 'normalize.css'
 import './app.css'
 import styled from 'styled-components'
