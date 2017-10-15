@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import axios from 'axios'
 import getDayOfWeek from '../../utils/get-day-of-week.js'
 import {
   Container,
-  Button,
+  Card,
   List,
+  ListHeading,
   ListItem,
   DayOfWeek,
   DayOfMonth
@@ -22,30 +24,6 @@ class VenueCard extends Component {
     data: [],
     fetched: false,
     showList: false
-  }
-
-  fetchVenues = () => {
-    if (this.state.fetched) {
-      this.setState({ showList: !this.state.showList })
-      return
-    }
-    if (this.props.songkick) {
-      this.fetchSongkick()
-    }
-    if (this.props.ticketmaster) {
-      this.fetchTicketmaster()
-    }
-  }
-
-  fetchSongkick = async () => {
-    const venueID = this.props.venueID
-    const res = await axios.get(`http://api.songkick.com/api/3.0/venues/${venueID}/calendar.json?apikey=Ap6UKNWuYTXt70qi`)
-
-    this.setState({
-      data: res.data.resultsPage.results.event,
-      fetched: true,
-      showList: true
-    })
   }
 
   fetchListings = async () => {
@@ -68,10 +46,17 @@ class VenueCard extends Component {
     })
   }
 
-  render() {
-    const sk = this.props.songkick
+  toggleList = () => {
+    if (this.state.showList) {
+      this.setState({
+        showList: false
+      })
+    }
+  }
 
+  render() {
     // default to ticketmaster if no songkick prop
+    const sk = this.props.songkick
     const renderList = this.state.data.map((item, key) => {
       const dayOfWeek = getDayOfWeek(sk ? item.start.date : item.dates.start.localDate)
       const date = sk ? item.start.date : item.dates.start.localDate
@@ -93,12 +78,20 @@ class VenueCard extends Component {
 
     return (
       <Container>
-        <Button onClick={this.fetchListings} venueID={this.props.value}>
-          {this.props.venueName}
-          <a href={this.props.venueUrl} target="_blank" onClick={(e) => e.stopPropagation()}>website</a>
-        </Button>
+        <Card onClick={this.fetchListings} venueID={this.props.value} data-card>
+
+          <div className="inner">
+            {this.props.venueName}
+            <a href={this.props.venueUrl} target="_blank" onClick={(e) => e.stopPropagation()}>SITE</a>
+          </div>
+        </Card>
         {
-          this.state.showList ? <List>{renderList}</List> : null
+          this.state.showList
+            ? <List onClick={this.toggleList}>
+                <ListHeading>{this.props.venueName}</ListHeading>
+                {renderList}
+              </List>
+            : null
         }
       </Container>
     )
