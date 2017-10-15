@@ -1,23 +1,68 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import 'normalize.css'
 import './app.css'
 import styled from 'styled-components'
-import Header from './components/header/header'
 import VenueCard from './components/venue-card/venue-card.js'
+import bg from './assets/img/bg.png'
 
+const AppContainer = styled.div`
+  padding: 60px;
+  background: url(${bg});
+`
 const VenuesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  max-width: 1440px;
+  max-width: 1600px;
+  height: 1000px;
   margin: 0 auto;
+  padding-top: 60px;
 `
 
+const Toggle = styled.a`
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  width: 150px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 0 auto 30px auto;
+  padding: 10px;
+  background-color: rgba(248, 212, 207, 0.8);
+  text-align: center;
+  &:hover {
+    background-color: rgb(248, 212, 207);
+    cursor: pointer;
+    transform: translate(-50%, -2px);
+  }
+`
+
+const OpenAll = (props) => (
+  <Toggle
+    className={props.className}
+    onClick={props.onClick}
+  >
+    {props.children}
+  </Toggle>
+)
+
 class App extends Component {
+  openAll() {
+    const divArray = [...document.querySelectorAll('[data-card]')]
+    const divArrayChildren = divArray.map(div => div.children[0])
+    divArrayChildren.forEach(div => {
+      div.click()
+    })
+  }
+
   render() {
     return (
-      <div className="App">
-        <Header title="SF Venues" />
+      <AppContainer className="app">
         <VenuesContainer>
+        <OpenAll onClick={this.openAll}>OPEN ALL</OpenAll>
           <VenueCard
             venueName="Rickshaw Stop"
             venueID="14791-rickshaw-stop"
@@ -175,6 +220,12 @@ class App extends Component {
             songkick
           />
           <VenueCard
+            venueName="Thee Parkside"
+            venueID="258-thee-parkside"
+            venueUrl="http://www.theeparkside.com/"
+            songkick
+          />
+          <VenueCard
             venueName="Cobb's Comedy Club"
             venueID="KovZpZAEkFEA"
             venueUrl="http://www.cobbscomedy.com/"
@@ -187,7 +238,7 @@ class App extends Component {
             ticketmaster
           />
         </VenuesContainer>
-      </div>
+      </AppContainer>
     );
   }
 }

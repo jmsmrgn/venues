@@ -1,34 +1,30 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-padding: 5px;
-width: 100%;
-@media (min-width: 500px) {
-  width: 50%;
-}
-@media (min-width: 767px) {
-  width: 33.33%;
-}
-@media (min-width: 1024px) {
-  width: 25%;
-}
-@media (min-width: 1600px) {
-  width: 20%;
-}
+  padding: 5px;
+  min-width: 250px;
+  flex: 1;
 `
 
-const Button = styled.div`
-  font-size: 18px;
+const Card = styled.div`
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   width: 100%;
+  height: 100%;
   padding: 20px;
-  background: oldlace;
+  background-color: rgba(253, 245, 230, 0.5);
   color: #29BEA5;
-  text-decoration: none;
+  border-radius: 10px;
   :hover {
     cursor: pointer;
-    margin-top: -1px;
+    transform: translateY(-2px);
+    background-color: rgba(253, 245, 230, 0.8);
+  }
+  .inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
   a {
     color: white;
@@ -37,7 +33,10 @@ const Button = styled.div`
     background: burlywood;
     text-decoration: none;
     margin: 10px auto 0 auto;
-    width: 80px;
+    width: 60px;
+    font-size: 14px;
+    padding: 5px 0;
+    border-radius: 5px;
     &:hover {
       background-color: navajowhite;
     }
@@ -48,13 +47,25 @@ const List = styled.ul`
   background: mediumaquamarine;
   list-style-type: none;
   text-align: left;
-  padding: 5px 10px;
+  padding: 20px 10px;
   margin: 0;
+  transform: translateY(-100%);
+  height: 100%;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer;
+  }
   li {
     color: papayawhip;
     font-size: 11px;
     margin-bottom: 2px;
   }
+`
+const ListHeading = styled.h1`
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  text-align: center;
+  color: rgb(253, 245, 230)
 `
 
 const ListItem = styled.li`
@@ -63,8 +74,7 @@ const ListItem = styled.li`
 `
 
 const DayOfWeek = styled.span`
-  width: 65px;
-  margin-right: 5px;
+  width: 35px;
   font-size: 12px;
 `
 
@@ -77,8 +87,9 @@ const DayOfMonth = styled.span`
 
 export {
   Container,
-  Button,
+  Card,
   List,
+  ListHeading,
   ListItem,
   DayOfWeek,
   DayOfMonth
