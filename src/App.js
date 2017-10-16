@@ -6,40 +6,54 @@ import VenueCard from './components/venue-card/venue-card.js'
 import bg from './assets/img/bg.png'
 
 const AppContainer = styled.div`
-  padding: 60px;
+  padding: 20px;
   background: url(${bg});
+  min-height: 100vh;
+  @media (min-width: 500px) {
+    padding: 60px;
+  }
 `
 const VenuesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  min-width: 300px;
   max-width: 1600px;
-  height: 1000px;
   margin: 0 auto;
   padding-top: 60px;
+  position: relative;
 `
 
 const Toggle = styled.a`
   position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 18px;
+  top: 25px;
+  right: 120px;
   font-weight: bold;
-  width: 150px;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #fff;
-  margin: 0 auto 30px auto;
-  padding: 10px;
   background-color: rgba(248, 212, 207, 0.8);
   text-align: center;
+  width: 110px;
+  padding: 5px;
+  font-size: 14px;
+  @media (min-width: 500px) {
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+    right: 160px;
+    top: 10px;
+  }
   &:hover {
     background-color: rgb(248, 212, 207);
     cursor: pointer;
-    transform: translate(-50%, -2px);
+    transform: translateY(-2px);
+  }
+  &.close {
+    right: 0;
   }
 `
 
-const OpenAll = (props) => (
+const ToggleAll = (props) => (
   <Toggle
     className={props.className}
     onClick={props.onClick}
@@ -57,11 +71,20 @@ class App extends Component {
     })
   }
 
+  closeAll() {
+    const divArray = [...document.querySelectorAll('[data-list]')]
+    const divArrayChildren = divArray.map(div => div.children[0])
+    divArrayChildren.forEach(div => {
+      div.click()
+    })
+  }
+
   render() {
     return (
-      <AppContainer className="app">
+      <AppContainer>
         <VenuesContainer>
-        <OpenAll onClick={this.openAll}>OPEN ALL</OpenAll>
+        <ToggleAll onClick={this.openAll}>OPEN ALL</ToggleAll>
+        <ToggleAll className="close" onClick={this.closeAll}>CLOSE ALL</ToggleAll>
           <VenueCard
             venueName="Rickshaw Stop"
             venueID="14791-rickshaw-stop"
