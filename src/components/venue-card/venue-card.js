@@ -30,10 +30,10 @@ class VenueCard extends Component {
     let res
 
     if (this.props.songkick) {
-      res = await axios.get(`http://api.songkick.com/api/3.0/venues/${venueID}/calendar.json?apikey=Ap6UKNWuYTXt70qi`)
+      res = await axios.get(`http://api.songkick.com/api/3.0/venues/${venueID}/calendar.json?apikey=${process.env.REACT_APP_SONGKICK_API_KEY}`)
     }
     if (this.props.ticketmaster) {
-      res = await axios.get(`https://app.ticketmaster.com/discovery/v2/events.json?venueId=${venueID}&size=100&apikey=Mv7NCYbJ8sByB1QdoDCulutzK64yBJA1`)
+      res = await axios.get(`https://app.ticketmaster.com/discovery/v2/events.json?venueId=${venueID}&size=100&apikey=${process.env.REACT_APP_TICKETMASTER_API_KEY}`)
     }
 
     const data = this.props.songkick ? res.data.resultsPage.results.event : res.data._embedded.events
@@ -75,23 +75,25 @@ class VenueCard extends Component {
       )
     })
 
+    const renderFront = () => (
+      <Card onClick={this.fetchListings} venueID={this.props.value} data-card>
+        <div className="inner">
+          {this.props.venueName}
+          <a href={this.props.venueUrl} target="_blank" onClick={(e) => e.stopPropagation()}>SITE</a>
+        </div>
+      </Card>
+    )
+
+    const renderBack = () => (
+      <List onClick={this.toggleList} data-list>
+        <ListHeading>{this.props.venueName}</ListHeading>
+        {renderList}
+      </List>
+    )
+
     return (
       <Container>
-        <Card onClick={this.fetchListings} venueID={this.props.value} data-card>
-
-          <div className="inner">
-            {this.props.venueName}
-            <a href={this.props.venueUrl} target="_blank" onClick={(e) => e.stopPropagation()}>SITE</a>
-          </div>
-        </Card>
-        {
-          this.state.showList
-            ? <List onClick={this.toggleList}>
-                <ListHeading>{this.props.venueName}</ListHeading>
-                {renderList}
-              </List>
-            : null
-        }
+        { !this.state.showList ? renderFront() : renderBack() }
       </Container>
     )
   }

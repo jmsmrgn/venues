@@ -3,7 +3,11 @@ import styled from 'styled-components'
 const Container = styled.div`
   padding: 5px;
   min-width: 250px;
+  min-height: 100px;
   flex: 1;
+  @media (min-width: 500px) {
+    min-height: 150px;
+  }
 `
 
 const Card = styled.div`
@@ -11,20 +15,26 @@ const Card = styled.div`
   font-weight: bold;
   text-align: center;
   width: 100%;
-  height: 100%;
+  min-height: 100px;
   padding: 20px;
   background-color: rgba(253, 245, 230, 0.5);
   color: #29BEA5;
   border-radius: 10px;
+  position: relative;
+  @media (min-width: 500px) {
+    min-height: 150px;
+  }
   :hover {
     cursor: pointer;
     transform: translateY(-2px);
     background-color: rgba(253, 245, 230, 0.8);
   }
   .inner {
-    position: relative;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
   }
   a {
     color: white;
@@ -44,12 +54,11 @@ const Card = styled.div`
 `
 
 const List = styled.ul`
-  background: mediumaquamarine;
+  background-color: rgba(102, 221, 170, 0.8);
   list-style-type: none;
   text-align: left;
   padding: 20px 10px;
   margin: 0;
-  transform: translateY(-100%);
   height: 100%;
   border-radius: 10px;
   &:hover {

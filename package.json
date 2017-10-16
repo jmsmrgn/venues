@@ -5,6 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/jmsmrgn/sf-venues.git",
   "author": "James Morgan <contact@jamesmorgan.io> (https://jamesmorgan.io)",
+  "homepage": "https://jamesmorgan.io/sf-venues",
   "license": "MIT",
   "dependencies": {
     "axios": "0.16.2",
