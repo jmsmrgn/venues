@@ -76,6 +76,7 @@ class VenueCard extends Component {
           <a
             href={sk ? item.uri : item.url}
             target="_blank"
+            onClick={(e) => e.stopPropagation()}
           >
             {sk ? item.performance[0].artist.displayName : item.name}
           </a>
