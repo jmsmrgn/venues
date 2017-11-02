@@ -46,11 +46,13 @@ class VenueCard extends Component {
 
     const data = this.props.songkick ? res.data.resultsPage.results.event : res.data._embedded.events
 
-    this.setState({
-      data,
-      fetched: true,
-      showList: true
-    })
+    if (data) {
+      this.setState({
+        data,
+        fetched: true,
+        showList: true
+      })
+    }
   }
 
   toggleList = () => {
