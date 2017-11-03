@@ -54,6 +54,7 @@ const Card = styled.div`
 `
 
 const List = styled.ul`
+  position: relative;
   background-color: rgba(102, 221, 170, 0.8);
   list-style-type: none;
   text-align: left;

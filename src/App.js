@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Provider } from 'react-redux'
+import store from './store'
 import 'normalize.css'
 import './app.css'
 import styled from 'styled-components'
@@ -40,7 +42,7 @@ const Toggle = styled.a`
     width: 150px;
     padding: 10px;
     font-size: 18px;
-    right: 160px;
+    right: 165px;
     top: 10px;
   }
   &:hover {
@@ -49,7 +51,7 @@ const Toggle = styled.a`
     transform: translateY(-2px);
   }
   &.close {
-    right: 0;
+    right: 5px;
   }
 `
 
@@ -81,186 +83,188 @@ class App extends Component {
 
   render() {
     return (
-      <AppContainer>
-        <VenuesContainer>
-        <ToggleAll onClick={this.openAll}>OPEN ALL</ToggleAll>
-        <ToggleAll className="close" onClick={this.closeAll}>CLOSE ALL</ToggleAll>
-          <VenueCard
-            venueName="Rickshaw Stop"
-            venueID="14791-rickshaw-stop"
-            venueUrl="//www.rickshawstop.com"
-            songkick
-          />
-          <VenueCard
-            venueName="Bottom of the Hill"
-            venueID="248-bottom-of-the-hill"
-            venueUrl="//www.bottomofthehill.com"
-            songkick
-          />
-          <VenueCard
-            venueName="1015 Folsom"
-            venueID="5670-1015-folsom"
-            venueUrl="//www.1015.com"
-            songkick
-          />
-          <VenueCard
-            venueName="Audio"
-            venueID="2393199-audio"
-            venueUrl="//www.audiosf.com"
-            songkick
-          />
-          <VenueCard
-            venueName="Fox Theater"
-            venueID="953251-fox-theater"
-            venueUrl="//www.thefoxoakland.com"
-            songkick
-          />
-          <VenueCard
-            venueName="The Independent"
-            venueID="324-independent"
-            venueUrl="//www.theindependentsf.com"
-            songkick
-          />
-          <VenueCard
-            venueName="The Mezzanine"
-            venueID="329-mezzanine"
-            venueUrl="//www.mezzaninesf.com"
-            songkick
-          />
-          <VenueCard
-            venueName="Hotel Utah Saloon"
-            venueID="328-hotel-utah-saloon"
-            venueUrl="//www.hotelutah.com"
-            songkick
-          />
-          <VenueCard
-            venueName="The Chapel"
-            venueID="2029634-chapel"
-            venueUrl="//www.thechapelsf.com"
-            songkick
-          />
-          <VenueCard
-            venueName="Slim's"
-            venueID="1489-slims"
-            venueUrl="//www.slims-sf.com"
-            songkick
-          />
-          <VenueCard
-            venueName="Public Works"
-            venueID="1108926-public-works"
-            venueUrl="//publicsf.com"
-            songkick
-          />
-          <VenueCard
-            venueName="Halcyon"
-            venueID="3429914-halcyon"
-            venueUrl="//www.halcyon-sf.com"
-            songkick
-          />
-          <VenueCard
-            venueName="Monarch"
-            venueID="1595753-monarch"
-            venueUrl="http://www.monarchsf.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Great American Music Hall"
-            venueID="1261-great-american-music-hall"
-            venueUrl="http://www.slimspresents.com/venue_detail/gamh/"
-            songkick
-          />
-          <VenueCard
-            venueName="The Warfield"
-            venueID="949-warfield"
-            venueUrl="http://thewarfieldtheatre.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="The Midway"
-            venueID="3013529-midway"
-            venueUrl="http://www.themidwaysf.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="The Great Northern"
-            venueID="3366109-great-northern-san-francisco"
-            venueUrl="http://www.thegreatnorthernsf.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Neck of the Woods"
-            venueID="2091824-neck-of-the-woods"
-            venueUrl="http://neckofthewoodssf.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Hemlock Tavern"
-            venueID="31153-hemlock-tavern"
-            venueUrl="http://www.hemlocktavern.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Temple"
-            venueID="32793-temple"
-            venueUrl="http://www.templesf.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Greek Theatre"
-            venueID="841-greek-theatre"
-            venueUrl="http://thegreekberkeley.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Bill Graham Civic Auditorium"
-            venueID="65-bill-graham-civic-auditorium"
-            venueUrl="http://www.billgrahamcivicauditorium.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Brick & Mortar Music Hall"
-            venueID="1296241-brick-and-mortar-music-hall"
-            venueUrl="http://brickandmortarmusic.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Social Hall SF"
-            venueID="3068854-social-hall-sf"
-            venueUrl="http://www.socialhallsf.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="The Regency Ballroom"
-            venueID="1418-regency-ballroom"
-            venueUrl="http://www.theregencyballroom.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="The Great Northern"
-            venueID="3366109-great-northern-san-francisco"
-            venueUrl="http://www.thegreatnorthernsf.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Thee Parkside"
-            venueID="258-thee-parkside"
-            venueUrl="http://www.theeparkside.com/"
-            songkick
-          />
-          <VenueCard
-            venueName="Cobb's Comedy Club"
-            venueID="KovZpZAEkFEA"
-            venueUrl="http://www.cobbscomedy.com/"
-            ticketmaster
-          />
-          <VenueCard
-            venueName="Punch Line"
-            venueID="KovZpZAE6e7A"
-            venueUrl="http://www.punchlinecomedyclub.com/"
-            ticketmaster
-          />
-        </VenuesContainer>
-      </AppContainer>
+      <Provider store={store}>
+        <AppContainer>
+          <VenuesContainer>
+          <ToggleAll onClick={this.openAll}>OPEN ALL</ToggleAll>
+          <ToggleAll className="close" onClick={this.closeAll}>CLOSE ALL</ToggleAll>
+            <VenueCard
+              venueName="Rickshaw Stop"
+              venueID="14791"
+              venueUrl="//www.rickshawstop.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Bottom of the Hill"
+              venueID="248"
+              venueUrl="//www.bottomofthehill.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="1015 Folsom"
+              venueID="5670"
+              venueUrl="//www.1015.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Audio"
+              venueID="2393199"
+              venueUrl="//www.audiosf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Fox Theater"
+              venueID="953251"
+              venueUrl="//www.thefoxoakland.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Independent"
+              venueID="324"
+              venueUrl="//www.theindependentsf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Mezzanine"
+              venueID="329"
+              venueUrl="//www.mezzaninesf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Hotel Utah Saloon"
+              venueID="328"
+              venueUrl="//www.hotelutah.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Chapel"
+              venueID="2029634"
+              venueUrl="//www.thechapelsf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Slim's"
+              venueID="1489"
+              venueUrl="//www.slims-sf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Public Works"
+              venueID="1108926"
+              venueUrl="//publicsf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Halcyon"
+              venueID="3429914"
+              venueUrl="//www.halcyon-sf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Monarch"
+              venueID="1595753"
+              venueUrl="http://www.monarchsf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Great American Music Hall"
+              venueID="1261"
+              venueUrl="http://www.slimspresents.com/venue_detail/gamh/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Warfield"
+              venueID="949"
+              venueUrl="http://thewarfieldtheatre.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Midway"
+              venueID="3013529"
+              venueUrl="http://www.themidwaysf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Great Northern"
+              venueID="3366109"
+              venueUrl="http://www.thegreatnorthernsf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Neck of the Woods"
+              venueID="2091824"
+              venueUrl="http://neckofthewoodssf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Hemlock Tavern"
+              venueID="31153"
+              venueUrl="http://www.hemlocktavern.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Temple"
+              venueID="32793"
+              venueUrl="http://www.templesf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Greek Theatre"
+              venueID="841"
+              venueUrl="http://thegreekberkeley.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Bill Graham Civic Auditorium"
+              venueID="65"
+              venueUrl="http://www.billgrahamcivicauditorium.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Brick & Mortar Music Hall"
+              venueID="1296241"
+              venueUrl="http://brickandmortarmusic.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Social Hall SF"
+              venueID="3068854"
+              venueUrl="http://www.socialhallsf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Regency Ballroom"
+              venueID="1418"
+              venueUrl="http://www.theregencyballroom.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Great Northern"
+              venueID="3366109"
+              venueUrl="http://www.thegreatnorthernsf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Thee Parkside"
+              venueID="258"
+              venueUrl="http://www.theeparkside.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Cobb's Comedy Club"
+              venueID="KovZpZAEkFEA"
+              venueUrl="http://www.cobbscomedy.com/"
+              site="ticketmaster"
+            />
+            <VenueCard
+              venueName="Punch Line"
+              venueID="KovZpZAE6e7A"
+              venueUrl="http://www.punchlinecomedyclub.com/"
+              site="ticketmaster"
+            />
+          </VenuesContainer>
+        </AppContainer>
+      </Provider>
     );
   }
 }
