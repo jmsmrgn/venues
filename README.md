@@ -1,6 +1,6 @@
-## sf-venues
+## venues
 
-Select venue event listings in San Francisco
+Select venue event listings via songkick and ticketmaster APIs
 
 ```bash
 yarn
