@@ -1,11 +1,11 @@
 {
-  "name": "sf-venues",
-  "version": "0.3.0",
-  "description": "Select venue event listings in San Francisco",
+  "name": "venues",
+  "version": "1.0.0",
+  "description": "Select venue event listings",
   "main": "index.js",
-  "repository": "https://github.com/jmsmrgn/sf-venues.git",
-  "author": "James Morgan <contact@jamesmorgan.io> (https://jamesmorgan.io)",
-  "homepage": "https://jamesmorgan.io/sf-venues",
+  "repository": "https://github.com/jmsmrgn/venues.git",
+  "author": "James Morgan <james@jamesmorgan.io> (https://jamesmorgan.io)",
+  "homepage": "https://jamesmorgan.io/venues",
   "license": "MIT",
   "dependencies": {
     "axios": "0.16.2",
