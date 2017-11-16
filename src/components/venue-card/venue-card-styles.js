@@ -67,8 +67,15 @@ const List = styled.ul`
   }
   li {
     color: papayawhip;
+    margin-bottom: 3px;
+  }
+  a {
     font-size: 11px;
-    margin-bottom: 2px;
+    color: #2a31ff;
+    text-decoration: none;
+    &:hover {
+      color: papayawhip;
+    }
   }
 `
 const ListHeading = styled.h1`

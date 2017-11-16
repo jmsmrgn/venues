@@ -5,6 +5,7 @@ import getDayOfWeek from '../../utils/get-day-of-week.js'
 import { Container, Card, List, ListHeading, ListItem, DayOfWeek, DayOfMonth } from './venue-card-styles.js'
 import { getAPIDetails } from '../../action-creators'
 import Spinner from '../spinner/spinner'
+import moment from 'moment'
 
 class VenueCard extends Component {
   static propTypes = {
@@ -57,11 +58,12 @@ class VenueCard extends Component {
         const dayOfWeek = getDayOfWeek(sk ? item.start.date : item.dates.start.localDate)
         const date = sk ? item.start.date : item.dates.start.localDate
         const dateShort = date.substring(date.indexOf('-') + 1)
+        const isToday = (moment().format('YYYY-MM-DD') === date)
 
         return (
-          <ListItem key={key}>
+          <ListItem key={key} style={isToday ? { backgroundColor: 'rgb(248,212,207)', padding: '3px 0 2px 0', borderRadius: '3px' } : null}>
             <DayOfMonth>{dateShort}</DayOfMonth>
-            <DayOfWeek>{dayOfWeek}</DayOfWeek>
+            <DayOfWeek style={isToday ? { color: 'rgb(102,221,170)' } : null}>{dayOfWeek}</DayOfWeek>
             <a href={sk ? item.uri : item.url} target="_blank" onClick={e => e.stopPropagation()}>
               {sk ? item.performance[0].artist.displayName : item.name}
             </a>

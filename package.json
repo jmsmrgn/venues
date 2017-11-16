@@ -12,6 +12,7 @@
     "chalk": "2.1.0",
     "dotenv": "4.0.0",
     "fs-extra": "4.0.2",
+    "moment": "2.19.2",
     "normalize.css": "7.0.0",
     "object-assign": "4.1.1",
     "promise": "8.0.1",
