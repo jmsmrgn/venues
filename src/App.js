@@ -239,12 +239,6 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
-              venueName="The Great Northern"
-              venueID="3366109"
-              venueUrl="http://www.thegreatnorthernsf.com/"
-              site="songkick"
-            />
-            <VenueCard
               venueName="Thee Parkside"
               venueID="258"
               venueUrl="http://www.theeparkside.com/"
