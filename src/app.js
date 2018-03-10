@@ -179,6 +179,12 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
+              venueName="The Fillmore"
+              venueID="6239"
+              venueUrl="http://www.thefillmore.com/"
+              site="songkick"
+            />
+            <VenueCard
               venueName="The Midway"
               venueID="3013529"
               venueUrl="http://www.themidwaysf.com/"
@@ -209,12 +215,6 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
-              venueName="Greek Theatre"
-              venueID="841"
-              venueUrl="http://thegreekberkeley.com/"
-              site="songkick"
-            />
-            <VenueCard
               venueName="Bill Graham Civic Auditorium"
               venueID="65"
               venueUrl="http://www.billgrahamcivicauditorium.com/"
@@ -239,9 +239,75 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
-              venueName="Thee Parkside"
-              venueID="258"
-              venueUrl="http://www.theeparkside.com/"
+              venueName="The Regency Ballroom"
+              venueID="1418"
+              venueUrl="http://www.theregencyballroom.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Swedish American Hall"
+              venueID="11561"
+              venueUrl="https://www.swedishamericanhall.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Café du Nord"
+              venueID="555661"
+              venueUrl="http://www.cafedunord.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Bender's"
+              venueID="31167"
+              venueUrl="http://www.bendersbar.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Bimbo's 365 Club"
+              venueID="1236"
+              venueUrl="http://www.bimbos365club.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Gray Area Theater"
+              venueID="2726288"
+              venueUrl="https://grayarea.org/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Alamo Drafthouse"
+              venueID="3206908"
+              venueUrl="https://drafthouse.com/sf/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="California Academy of Sciences"
+              venueID="49388"
+              venueUrl="https://www.calacademy.org/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Greek Theatre"
+              venueID="841"
+              venueUrl="http://thegreekberkeley.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The New Parish"
+              venueID="523156"
+              venueUrl="http://www.thenewparish.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Starline Social Club"
+              venueID="1522398"
+              venueUrl="http://www.starlinesocialclub.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Cornerstone Craft Beer"
+              venueID="3629749"
+              venueUrl="https://www.cornerstoneberkeley.com/"
               site="songkick"
             />
             <VenueCard
