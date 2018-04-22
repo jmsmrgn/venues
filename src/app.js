@@ -251,6 +251,12 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
+              venueName="The Knockout"
+              venueID="31067"
+              venueUrl="https://www.theknockoutsf.com/"
+              site="songkick"
+            />
+            <VenueCard
               venueName="Bender's"
               venueID="31167"
               venueUrl="http://www.bendersbar.com/"
