@@ -155,6 +155,18 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
+              venueName="Public Works Loft"
+              venueID="3036394"
+              venueUrl="//publicsf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Phoenix Hotel"
+              venueID="460441"
+              venueUrl="https://www.phoenixsf.com/"
+              site="songkick"
+            />
+            <VenueCard
               venueName="Halcyon"
               venueID="3429914"
               venueUrl="//www.halcyon-sf.com"
@@ -203,6 +215,24 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
+              venueName="PianoFight"
+              venueID="2842438"
+              venueUrl="http://pianofight.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Cafe Du Soleil"
+              venueID="1924859"
+              venueUrl="//publicsf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Club Deluxe"
+              venueID="34906"
+              venueUrl="http://www.liveatdeluxe.com/"
+              site="songkick"
+            />
+            <VenueCard
               venueName="Hemlock Tavern"
               venueID="31153"
               venueUrl="http://www.hemlocktavern.com/"
@@ -233,6 +263,18 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
+              venueName="The ENDUP"
+              venueID="9783"
+              venueUrl="https://theendupsf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="F8"
+              venueID="2007629"
+              venueUrl="//feightsf.com"
+              site="songkick"
+            />
+            <VenueCard
               venueName="The Regency Ballroom"
               venueID="1418"
               venueUrl="http://www.theregencyballroom.com/"
@@ -254,6 +296,168 @@ class App extends Component {
               venueName="The Knockout"
               venueID="31067"
               venueUrl="https://www.theknockoutsf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Biscuits and Blues"
+              venueID="11497"
+              venueUrl="http://www.biscuitsandblues.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Boom Boom Room"
+              venueID="11491"
+              venueUrl="http://www.boomboomblues.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Amnesia"
+              venueID="31103"
+              venueUrl="http://amnesiathebar.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Elbo Room"
+              venueID="341"
+              venueUrl="http://www.elbo.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="El Rio"
+              venueID="31117"
+              venueUrl="http://www.elriosf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Saloon"
+              venueID="31138"
+              venueUrl="http://www.sfblues.net/Saloon.html"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="DNA Lounge"
+              venueID="7516"
+              venueUrl="http://www.dnalounge.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Make-Out Room"
+              venueID="31096"
+              venueUrl="http://www.makeoutroom.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Milk Bar"
+              venueID="31417"
+              venueUrl="http://www.milksf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Lost Church"
+              venueID="1443733"
+              venueUrl="http://www.thelostchurch.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Bazaar Cafe"
+              venueID="31094"
+              venueUrl="http://www.bazaarcafe.com/calendar/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Red Poppy Art House"
+              venueID="31061"
+              venueUrl="http://redpoppyarthouse.org/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Madrone Art Bar"
+              venueID="977016"
+              venueUrl="http://www.madroneartbar.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Revolution Cafe"
+              venueID="36415"
+              venueUrl="http://www.revolutioncafesf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Sofar Sounds"
+              venueID="2954803"
+              venueUrl="https://www.sofarsounds.com/san-francisco"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Royale"
+              venueID="31110"
+              venueUrl="http://www.theroyalesf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Rite Spot Cafe"
+              venueID="31099"
+              venueUrl="http://www.ritespotcafe.net/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Amoeba Music"
+              venueID="537711"
+              venueUrl="https://www.amoeba.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Eagle Tavern"
+              venueID="31163"
+              venueUrl="http://www.sf-eagle.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Hawthorn"
+              venueID="2751608"
+              venueUrl="http://hawthornsf.launchrock.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Honey Hive Gallery"
+              venueID="2501134"
+              venueUrl="http://honeyhivecollective.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Harlot"
+              venueID="12974"
+              venueUrl="http://www.harlotsf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Masonic"
+              venueID="5614"
+              venueUrl="http://sfmasonic.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Davies Symphony Hall"
+              venueID="505"
+              venueUrl="http://sfwmpac.org/symphonyhall/sh_index.html"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Palace of Fine Arts"
+              venueID="33807"
+              venueUrl="http://www.palaceoffinearts.org/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Golden Gate Park"
+              venueID="5832"
+              venueUrl="http://www.sfgov.org/site/recpark_index.asp"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="SFJAZZ Center"
+              venueID="2020904"
+              venueUrl="https://www.sfjazz.org"
               site="songkick"
             />
             <VenueCard
@@ -281,9 +485,39 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
+              venueName="Le Colonial Restaurant"
+              venueID="13009"
+              venueUrl="http://www.lecolonialsf.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Love + Propaganda"
+              venueID="3160144"
+              venueUrl="http://www.loveandpropaganda.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Blondie's"
+              venueID="31102"
+              venueUrl="http://www.blondiesbarsf.com/calendar.html"
+              site="songkick"
+            />
+            <VenueCard
               venueName="California Academy of Sciences"
               venueID="49388"
               venueUrl="https://www.calacademy.org/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Castro Theatre"
+              venueID="10317"
+              venueUrl="http://www.castrotheatre.com/"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="The Armory"
+              venueID="2486689"
+              venueUrl="http://armoryclub.com/"
               site="songkick"
             />
             <VenueCard
