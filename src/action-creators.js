@@ -15,7 +15,7 @@ export function getAPIDetails(venueID, site) {
   }
 
   if (site === 'ticketmaster') {
-    endpoint = `https://app.ticketmaster.com/discovery/v2/events.json?venueId=${venueID}&size=100&apikey=${process.env.REACT_APP_TICKETMASTER_API_KEY}`
+    endpoint = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${process.env.REACT_APP_TICKETMASTER_API_KEY}&venueId=${venueID}&size=100&sort=date,asc`
     schema = 'res.data._embedded.events'
   }
 

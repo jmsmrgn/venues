@@ -22,7 +22,7 @@ const Div = styled.div`
 
 const Spinner = (props) => {
   if (props.noData) {
-    return <Div>FEED DOWN</Div>
+    return <Div>FEED EMPTY</Div>
   }
   return (
     <Image src={png} alt="loading indicator" />
