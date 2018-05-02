@@ -68,10 +68,15 @@ class App extends Component {
   openAll() {
     const divArray = [...document.querySelectorAll('[data-card]')]
     const divArrayChildren = divArray.map(div => div.children[0])
-    divArrayChildren.forEach(div => {
-      div.click()
-    })
+    const clickDelay = setInterval(() => {
+      divArrayChildren[0].click()
+      divArrayChildren.shift()
+      if (divArrayChildren.length === 0) {
+        clearInterval(clickDelay)
+      }
+    }, 250)
   }
+
 
   closeAll() {
     const divArray = [...document.querySelectorAll('[data-list]')]
