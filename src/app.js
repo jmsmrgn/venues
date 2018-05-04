@@ -184,6 +184,12 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
+              venueName="August Hall"
+              venueID="3801954"
+              venueUrl="//www.augusthallsf.com/"
+              site="songkick"
+            />
+            <VenueCard
               venueName="Great American Music Hall"
               venueID="1261"
               venueUrl="//www.slimspresents.com/venue_detail/gamh"
@@ -217,12 +223,6 @@ class App extends Component {
               venueName="Neck of the Woods"
               venueID="2091824"
               venueUrl="//neckofthewoodssf.com"
-              site="songkick"
-            />
-            <VenueCard
-              venueName="PianoFight"
-              venueID="2842438"
-              venueUrl="//pianofight.com"
               site="songkick"
             />
             <VenueCard
@@ -271,6 +271,12 @@ class App extends Component {
               venueName="The ENDUP"
               venueID="9783"
               venueUrl="//theendupsf.com"
+              site="songkick"
+            />
+            <VenueCard
+              venueName="Love + Propaganda"
+              venueID="3160144"
+              venueUrl="//www.loveandpropaganda.com"
               site="songkick"
             />
             <VenueCard
@@ -358,6 +364,12 @@ class App extends Component {
               site="songkick"
             />
             <VenueCard
+              venueName="PianoFight"
+              venueID="2842438"
+              venueUrl="//pianofight.com"
+              site="songkick"
+            />
+            <VenueCard
               venueName="The Lost Church"
               venueID="1443733"
               venueUrl="//www.thelostchurch.com"
@@ -409,12 +421,6 @@ class App extends Component {
               venueName="Amoeba Music"
               venueID="537711"
               venueUrl="//www.amoeba.com"
-              site="songkick"
-            />
-            <VenueCard
-              venueName="Eagle Tavern"
-              venueID="31163"
-              venueUrl="//www.sf-eagle.com"
               site="songkick"
             />
             <VenueCard
@@ -493,12 +499,6 @@ class App extends Component {
               venueName="Le Colonial Restaurant"
               venueID="13009"
               venueUrl="//www.lecolonialsf.com"
-              site="songkick"
-            />
-            <VenueCard
-              venueName="Love + Propaganda"
-              venueID="3160144"
-              venueUrl="//www.loveandpropaganda.com"
               site="songkick"
             />
             <VenueCard
