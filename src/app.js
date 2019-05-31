@@ -135,12 +135,12 @@ class App extends Component {
               venueUrl="//www.mezzaninesf.com"
               site="songkick"
             />
-            <VenueCard
+            {/* <VenueCard
               venueName="Hotel Utah Saloon"
               venueID="328"
               venueUrl="//www.hotelutah.com"
               site="songkick"
-            />
+            /> */}
             <VenueCard
               venueName="The Chapel"
               venueID="2029634"
